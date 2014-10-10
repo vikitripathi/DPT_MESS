@@ -34,6 +34,6 @@ class Rating(models.Model):
     user=models.ForeignKey(User)
 
     def __unicode__(self):  # Python 3: def __str__(self):
-        return self.ratingsfrom django.utils import timezone
+        return self.ratings
 
 
