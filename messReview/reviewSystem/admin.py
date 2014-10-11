@@ -28,6 +28,9 @@ admin.site.register(User,UserAdmin) # hide show timestamp
 
 class CategoryAdmin(admin.ModelAdmin):
     fields = ['items_type', 'item']
+    #search_fields = ['item']
+    list_display = ( 'items_type','item')
+    list_filter = ['items_type']
 admin.site.register(Category,CategoryAdmin)
 
 class RatingAdmin(admin.ModelAdmin):
